@@ -1,1 +1,4 @@
+protocol Metaclass {
+    func displayAttributes()
+}
 
