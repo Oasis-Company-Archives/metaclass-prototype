@@ -1,1 +1,33 @@
+{
+  "$id": "https://example.org/metaverse/schema/grass.v0.1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grass Metaclass v0.1",
+  "type": "object",
+  "allOf": [
+    { "$ref": "metaclass.base.v0.1.json" }
+  ],
+  "required": ["meta", "intrinsic"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["type", "version"],
+      "properties": {
+        "type": { "const": "grass" },
+        "version": { "const": "0.1" }
+      },
+      "additionalProperties": true
+    },
+    "intrinsic": {
+      "type": "object",
+      "required": ["heightCm", "color", "density"],
+      "properties": {
+        "heightCm": { "type": "number", "minimum": 0 },
+        "color": { "type": "string" },
+        "density": { "type": "string", "enum": ["low", "medium", "high"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
 
