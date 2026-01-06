@@ -1,1 +1,10 @@
+{
+  "meta": { "type": "water", "version": "0.1", "tags": ["fluid"] },
+  "intrinsic": {
+    "state": "liquid",
+    "temperatureC": 18,
+    "flow": { "enabled": true, "direction": [1, 0, 0], "speed": 0.8 }
+  },
+  "interaction": { "affordances": ["pour", "freeze", "evaporate"] }
+}
 
