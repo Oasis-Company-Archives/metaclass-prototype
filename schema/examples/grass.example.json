@@ -1,1 +1,6 @@
+{
+  "meta": { "type": "grass", "version": "0.1", "tags": ["plant", "ground-cover"] },
+  "intrinsic": { "heightCm": 12.5, "color": "green", "density": "medium" },
+  "interaction": { "affordances": ["trample", "cut"] }
+}
 
